@@ -8,7 +8,7 @@ import random
 import powerlaw
 
 # KONFIGURACJA
-AI_FILE = "gemini_temp_0.2.txt"
+AI_FILE = "gemini_creative/gemini_temp_0.2.txt"
 MODEL_NAME = "gemini-2.5-flash"
 NUM_SAMPLES = 1
 XMIN_SETTING = 1

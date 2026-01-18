@@ -6,7 +6,7 @@ import os
 import powerlaw
 
 
-INPUT_FILE = "Dune.txt"
+INPUT_FILE = "The_sun_also_rises.txt"
 XMIN_SETTING = 1
 
 

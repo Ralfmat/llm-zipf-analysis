@@ -19,7 +19,7 @@ safety_settings = [
 
 MODEL_NAME = "gemini-2.5-flash"
 
-temperatures = [0.2]
+temperatures = [1.5]
 # temperatures = [0.2, 0.7, 1.5]
 
 
