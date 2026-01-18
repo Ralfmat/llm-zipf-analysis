@@ -5,7 +5,7 @@ import re
 # 1. ŁADOWANIE DANYCH
 print("1. Wczytywanie WikiText-103...")
 try:
-    dataset = load_from_disk("./wikitext_103_raw")
+    dataset = load_from_disk("../wikitext_103_raw")
 except:
     print("Błąd: Nie znaleziono danych w folderze ./wikitext_103_raw")
     exit()

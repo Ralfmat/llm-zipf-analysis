@@ -1,5 +1,5 @@
 .env
-Dune.txt
-The_old_man_and_the_sea.txt
+data/Human/Dune.txt
+data/Human/The_old_man_and_the_sea.txt
 /wikitext_103_raw
-The_sun_also_rises.txt
+data/Human/The_sun_also_rises.txt

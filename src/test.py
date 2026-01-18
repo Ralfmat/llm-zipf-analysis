@@ -8,7 +8,7 @@ import random
 import powerlaw
 
 # KONFIGURACJA
-AI_FILE = "gemini_creative/gemini_temp_0.2.txt"
+AI_FILE = "../data/AI/gemini_temp_0.2.txt"
 MODEL_NAME = "gemini-2.5-flash"
 NUM_SAMPLES = 1
 XMIN_SETTING = 1
@@ -54,7 +54,7 @@ print(f"   -> AI Alpha: {ai_alpha:.4f}")
 # PRZYGOTOWANIE DANYCH LUDZKICH
 print(f"2. Analiza {NUM_SAMPLES} próbek WikiText...")
 try:
-    dataset = load_from_disk("./wikitext_103_raw")
+    dataset = load_from_disk("../wikitext_103_raw")
     full_human_text = dataset['train']['text']
 except:
     print("Błąd WikiText.")

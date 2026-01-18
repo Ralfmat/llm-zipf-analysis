@@ -10,6 +10,6 @@ from datasets import load_from_disk
 
 
 # Load dataset
-dataset = load_from_disk("./wikitext_103_raw")
+dataset = load_from_disk("../wikitext_103_raw")
 print("Loaded from disk!")
 print(dataset)
