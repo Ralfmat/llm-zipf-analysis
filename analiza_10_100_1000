@@ -1,0 +1,9 @@
+o, że po randze 100 wykres idealnie pokrywa się z czerwoną linią (idealnym Zipfem), świadczy o braku specyfiki.
+
+U człowieka (np. Herbert/Diuna): Wykres po randze 100 często "faluje". Dlaczego? Bo Herbert ma obsesję na punkcie słowa piasek, woda, przyprawa. Te słowa będą występować znacznie częściej, niż wynikałoby to ze statystyki języka ogólnego, a inne słowa (np. telefon, samochód) nie wystąpią wcale. To tworzy "dołki i górki" na wykresie.
+
+W WikiText/AI:
+
+WikiText to zbiór tysięcy tematów. Słowa specyficzne (dotyczące np. biologii) uśredniają się ze słowami z historii czy fizyki.
+
+Efekt uśrednienia (Law of Large Numbers): Kiedy zmieszasz style tysięcy autorów (Wikipedia) lub wygenerujesz tekst dążący do "średniej" (AI), indywidualne dziwactwa znikają. Zostaje czysta, matematyczna statystyka. Idealna linia Zipfa w ogonie to znak, że tekst nie ma jednego, silnego "głosu" autorskiego.

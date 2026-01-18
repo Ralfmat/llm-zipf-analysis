@@ -1,0 +1,3 @@
+Wniosek do Twojej pracy: To jest potężny argument! Możesz napisać wnioski tak:
+
+"AI potrafi idealnie symulować strukturę języka (parametr Alpha bliski ideałowi), co sprawia, że na pierwszy rzut oka tekst wygląda naturalnie. Jednak analiza głębsza (liczba unikalnych słów) obnaża jego powierzchowność – model posiada znacznie uboższy zasób leksykalny i nie potrafi generować 'Długiego Ogona' (Long Tail), który jest cechą ludzkiej kreatywności."
