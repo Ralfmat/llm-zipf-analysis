@@ -6,7 +6,7 @@ import os
 import powerlaw
 
 
-INPUT_FILE = "../data/Human/The_sun_also_rises.txt"
+INPUT_FILE = "../data/AI/novel_llama-3.3-70b_temp_1.0.txt"
 XMIN_SETTING = 1
 
 
@@ -61,14 +61,12 @@ print(f"   -> Obliczony parametr Alpha: {alpha:.4f}")
 
 
 ideal_ranks = ranks
-ideal_probs = probs[0] / ideal_ranks  # Prawo Zipfa: P(r) ~ 1/r
+ideal_probs = probs[0] / ideal_ranks
 
-# --- RYSOWANIE WYKRESÓW ---
 print("3. Generowanie wykresu...")
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 7))
 
-# WYKRES 1: Rozkład Zipfa (Log-Log)
 ax1.loglog(ranks, probs, color='blue', linewidth=2, label=f'Książka (α={alpha:.2f})')
 ax1.loglog(ideal_ranks, ideal_probs, 'r--', linewidth=2,
            label='Idealny Zipf (α=~2.0)')
@@ -89,14 +87,12 @@ ax2.set_title(f"Top {top_n} najczęstszych słów", fontsize=14, weight='bold')
 ax2.set_ylabel("Liczba wystąpień", fontsize=12)
 ax2.tick_params(axis='x', rotation=45)
 
-# Dodanie statystyk tekstowych na wykresie
 info_text = (
     f"Plik: {INPUT_FILE}\n"
     f"Wszystkich słów: {total_tokens}\n"
     f"Unikalnych: {unique_count}\n"
     f"Alpha: {alpha:.4f}"
 )
-# Ramka z informacjami w prawym górnym rogu drugiego wykresu
 ax2.text(0.95, 0.95, info_text, transform=ax2.transAxes, fontsize=11,
          verticalalignment='top', horizontalalignment='right',
          bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
