@@ -8,7 +8,7 @@ import random
 import powerlaw
 
 MODEL_NAME = "gemini-2.5"
-AI_FILE = f"../data/AI/{MODEL_NAME}_temp_1.0.txt"
+AI_FILE = f"../data/AI/{MODEL_NAME}_temp_1.5.txt"
 TARGET_WORD_COUNT = 73604
 NUM_SAMPLES = 10
 XMIN_SETTING = 1
@@ -44,7 +44,6 @@ with open(AI_FILE, 'r', encoding='utf-8') as f:
     ai_text = f.read()
 
 raw_ai_tokens = get_tokens(ai_text)
-
 
 if len(raw_ai_tokens) < TARGET_WORD_COUNT:
     print(f"BŁĄD: Plik AI jest za krótki! Ma {len(raw_ai_tokens)} słów, a wymagane jest {TARGET_WORD_COUNT}.")
