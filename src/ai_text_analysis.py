@@ -59,7 +59,7 @@ print(f"   -> AI Liczba słów (N): {ai_count}")
 print(f"   -> AI Unikalnych słów: {ai_unique}")
 print(f"   -> AI Alpha: {ai_alpha:.4f}")
 
-
+# Wikitext
 print(f"2. Analiza {NUM_SAMPLES} ciągłych próbek WikiText (N={TARGET_WORD_COUNT})...")
 try:
     dataset = load_from_disk("../wikitext_103_raw")

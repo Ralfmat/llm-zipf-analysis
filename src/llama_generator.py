@@ -8,7 +8,7 @@ load_dotenv()
 API_KEY = os.getenv("GROQ_KEY")
 client = Groq(api_key=API_KEY)
 model_name = "llama-3.3-70b-versatile"
-# temperatures = [0.2, 0.7, 1.5]
+# temperatures = [0.2, 1.0, 1.5]
 temperatures = [1.0]
 
 PROMPT_NOVEL = """Write a chapter of a science fiction novel based on the following scene: {topic}.

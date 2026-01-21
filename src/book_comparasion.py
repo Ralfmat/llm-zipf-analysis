@@ -6,9 +6,9 @@ import os
 import random
 import powerlaw
 
-FILE_AI = "../data/AI/novel_llama-3.3-70b_temp_1.0.txt"
+FILE_AI = "../data/AI/novel_gemini-2.5.txt"
 FILE_HUMAN = "../data/Human/Dune.txt"
-MODEL_NAME = "llama-3.3-70b"
+MODEL_NAME = "gemini-2.5-pro"
 NUM_SAMPLES = 10
 XMIN_SETTING = 1
 

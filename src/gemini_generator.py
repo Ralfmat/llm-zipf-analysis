@@ -19,16 +19,16 @@ safety_settings = [
 
 MODEL_NAME = "gemini-2.5-pro"
 
-temperatures = [1.5]
-# temperatures = [0.2, 1.0, 1.5]
+# temperatures = [1.5]
+temperatures = [0.2, 1.0, 1.5]
 
 
-PROMPT_ESSAY = """Write a formal, academic essay about: {topic}.
-Rules:
-1. Tone: Professional, objective, factual.
-2. Vocabulary: Standard academic English.
-3. Structure: Introduction, body paragraphs, conclusion.
-4. Length: Approx 800 words."""
+# PROMPT_ESSAY = """Write a formal, academic essay about: {topic}.
+# Rules:
+# 1. Tone: Professional, objective, factual.
+# 2. Vocabulary: Standard academic English.
+# 3. Structure: Introduction, body paragraphs, conclusion.
+# 4. Length: Approx 800 words."""
 
 PROMPT_WIKI = """Write a comprehensive, detailed encyclopedic article about: {topic}.
 Rules:
@@ -127,7 +127,6 @@ for temp in temperatures:
             ]
         )
 
-
         print(f"  > Generowanie esejów...")
         for topic in topics_wiki:
             prompt = PROMPT_WIKI.format(topic=topic)
@@ -148,4 +147,3 @@ for temp in temperatures:
 
     print(f"\nUKOŃCZONO: {filename}")
 
-print("\n--- GOTOWE ---")
